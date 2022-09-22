@@ -1,4 +1,6 @@
-// Pense em alguma coisa do cotidiano que seja contável e estruturada. Por enquanto, vamos 
+// SEMANA 1:
+//
+//Pense em alguma coisa do cotidiano que seja contável e estruturada. Por enquanto, vamos 
 // chamar esta coisa de item. Com esse item, nós vamos construir nossas lógicas e evoluir no 
 // projeto através das semanas. Pode ser qualquer coisa que possa ser descrita com 
 // características escritas.
@@ -77,3 +79,63 @@ console.log(temp3.toUpperCase())
 console.log("Número de integrantes da equipe principal:", integrantes3)
 console.log("Há mais de 20 episódios na temporada?", maisDe20Episodios3)
 console.log("Os", integrantes3, "integrantes principais são: " + nomeIntegrantes3[0] + ", " + nomeIntegrantes3[1] + ", " + nomeIntegrantes3[2] + ", " + nomeIntegrantes3[3] + ", " + nomeIntegrantes3[4] + ", " + nomeIntegrantes3[5] + " e " + nomeIntegrantes3[6] + ".")
+
+
+// SEMANA 2:
+//
+// 1. Transforme os itens que criamos nas últimas semanas em objetos
+
+const objeto1 = {
+    temporada: 'Livro Um: Água',
+    integrantes: 5,
+    temMais20Episodios: false
+}
+
+const objeto2 = {
+    temporada: 'Livro Dois: Terra',
+    integrantes: 6,
+    temMais20Episodios: false
+}
+
+const objeto3 = {
+    temporada: 'Livro Três: Fogo',
+    integrantes: 7,
+    temMais20Episodios: true
+}
+
+// 2. Crie um array para guardar os objetos. Este array deve estar vazio, por enquanto;
+
+const criarArray = [
+
+]
+
+// 3. Adicione os objetos criados no item 1 ao array de objetos criado no item 2, utilizando 
+//o push()
+
+criarArray.push(objeto1, objeto2, objeto3)
+
+//4. Altere o item 3, para criar uma verificação antes de dar o push. 
+//A caraterística booleana do objeto deve ser validada. Isto é, o objeto só deve ser 
+//adicionado ao array se a propriedade booleana for true;
+
+if(objeto1.temMais20Episodios === true){
+    criarArray.push(objeto1);  
+}else{
+    window.alert("Objeto 1 não adicionado por ser false")
+}
+
+if(objeto2.temMais20Episodios === true){
+    criarArray.push(objeto2);  
+}else{
+    window.alert("Objeto 2 não adicionado por ser false")
+}
+
+if(objeto3.temMais20Episodios === true){
+    criarArray.push(objeto3);  
+}else{
+    window.alert("Objeto 3 não adicionado por ser false")
+}
+
+// 5. Crie uma condição else, que, em caso de valor false na condição acima, exiba 
+//um **ALERT** avisando para o usuário que o item não foi adicionado, e não faça 
+//o push
