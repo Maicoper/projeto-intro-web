@@ -1,4 +1,4 @@
-// SEMANA 1:
+// ***SEMANA 1***:
 //
 //Pense em alguma coisa do cotidiano que seja contável e estruturada. Por enquanto, vamos 
 // chamar esta coisa de item. Com esse item, nós vamos construir nossas lógicas e evoluir no 
@@ -81,7 +81,7 @@ console.log("Há mais de 20 episódios na temporada?", maisDe20Episodios3)
 console.log("Os", integrantes3, "integrantes principais são: " + nomeIntegrantes3[0] + ", " + nomeIntegrantes3[1] + ", " + nomeIntegrantes3[2] + ", " + nomeIntegrantes3[3] + ", " + nomeIntegrantes3[4] + ", " + nomeIntegrantes3[5] + " e " + nomeIntegrantes3[6] + ".")
 
 
-// SEMANA 2:
+// ***SEMANA 2***:
 //
 // 1. Transforme os itens que criamos nas últimas semanas em objetos
 
@@ -139,3 +139,39 @@ if(objeto3.temMais20Episodios === true){
 // 5. Crie uma condição else, que, em caso de valor false na condição acima, exiba 
 //um **ALERT** avisando para o usuário que o item não foi adicionado, e não faça 
 //o push
+
+
+
+// ***SEMANA 3***:
+
+
+// 1. Reescrevendo o relatório criado utilizando console.log() que começamos na semana 2, altere a forma que a 
+// característica de array dos itens seja escrita como um laço que guarde todos os valores da propriedade array do 
+// objeto em uma mesma string. Utilize esta string no relatório.
+
+for (let i = 0 ; i < criarArray.length ; i++){
+    console.log(criarArray[i])
+} // Irá imprimir o objeto3 repetido por causa do push na linha 134
+
+// 2. Ainda no relatório, altere-o para que ele seja criado utilizando laços. Ou seja, você não deve mais imprimir 
+// individualmente cada item do relatório. Cada item deve ser exibido a partir de uma iteração do laço. Para testar, 
+// adicione mais um item ao array de objetos, e verifique se ele é exibido corretamente.
+
+const objeto4 = {
+    temporada: 'A lenda de koora - Livro um: Ar',
+    integrantes: 4,
+    temMais20Episodios: false
+}
+
+criarArray.push(objeto4)
+
+for (let i = 0 ; i < criarArray.length ; i++){
+    console.log(criarArray[i])
+} // Irá imprimir o objeto3 repetido por causa do push na linha 134
+
+// 3. Crie uma função que receba como parâmetro um objeto, e devolva a string do relatório com os dados do objeto.
+
+
+// 4. Crie uma função que recebe um array de objetos e uma string. Esta função deve retornar um objeto, e o objeto 
+// retornado deve possuir apenas os itens que tenham o nome/título igual à string passada como parâmetro. Caso não 
+// exista um item, exiba um ALERT indicando que nenhum item foi encontrado.
