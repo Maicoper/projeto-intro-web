@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(25, 3, 48);
+    color: white;
+}
+
+header{
+    background-color: rgb(236, 131, 11);
+    color: rgb(25, 3, 48);
+    border: 1px solid white;
+}
+
+section{
+    border: 1px solid white;
+    align-items: center;
+    justify-content: center;
+}
+
+footer{
+    background-color: rgb(236, 131, 11);
+    color: rgb(25, 3, 48);
+    border: 1px solid white;
+}
